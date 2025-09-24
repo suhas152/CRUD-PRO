@@ -1,6 +1,7 @@
 // Backend API Configuration
 export const API_CONFIG = {
-  baseURL: "http://localhost:2030/adminfunc",
+  // Corrected the base URL to match the backend's deployment context
+  baseURL: "http://localhost:2030/newBackApp",
   headers: { "Content-Type": "application/json" }
 };
 
@@ -8,5 +9,4 @@ export const API_CONFIG = {
 export const APP_CONFIG = {
   appName: "Function Management Dashboard",
   version: "1.0.0"
-
 };
