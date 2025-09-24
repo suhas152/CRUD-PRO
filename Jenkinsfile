@@ -5,7 +5,7 @@ pipeline {
 
         stage('Build Frontend') {
             steps {
-                dir('NEWBACKEND/frontend/func-app') {
+                dir('frontend/func-app') {
                     bat 'npm install'
                     bat 'npm run build'
                 }
@@ -26,7 +26,7 @@ pipeline {
 
         stage('Build Backend') {
             steps {
-                dir('NEWBACKEND/backend/newBackapp') {
+                dir('backend/newBackapp') {
                     bat 'mvn clean package'
                 }
             }
@@ -58,3 +58,4 @@ pipeline {
     }
     
 }
+
